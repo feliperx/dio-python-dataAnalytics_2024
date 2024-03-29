@@ -23,6 +23,23 @@ list4 = list3[::-1]
 for index, number in enumerate(list4):
     print(f'{index}: {number}')
 
+list4.append(10)
+list_copy = list1.copy()
+print('list_copy >>>', list_copy)
+list_copy.clear()
+print('list_copy >>>', list_copy)
+list_copy.append('Gama')
+list_copy.extend(['do', 'Vasco', {'oi':'ade'}, [1,2,3]]) # adiciona elementos de uma outra lista
+print('list_copy >>>', list_copy)
+list_copy.pop()
+list_copy.pop(1) # remove index 1
+print('list_copy >>>', list_copy)
+list4.sort()
+list4.reverse() # inverte as posicoes do elementos
+print('list4 >>>', list4)
+print('len(list4) >>>', len(list4))
+
+
 
 #filter
 pares = [number for number in list4 if (number % 2 == 0 and number != 0)]
