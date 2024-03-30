@@ -13,3 +13,7 @@ print(fruits)
 print(footbal_club)
 print(footbal_clubs)
 print(numbers)
+
+
+carros = ("gol")
+print(isinstance(carros, tuple))
